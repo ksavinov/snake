@@ -25,14 +25,6 @@ def create_apple():  # create apple in random position
                           posy + SEG_SIZE,
                           fill="red")
 
-    # prevent apple created in snake
-    for i in range(len(s.segments)):
-        if c.coords(s.segments[i].instance) == BLOCK:
-            print("olololo")
-            c.delete(BLOCK)
-            create_apple()
-
-
 def main():
     global IN_GAME
     global score
